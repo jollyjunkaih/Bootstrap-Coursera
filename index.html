@@ -19,17 +19,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
     <!--we are importing the bootstrap elements from the node modules folder-->
-
+    <link href="css/styles.css" rel="stylesheet">
+    <!--now we are importing some pre-defined css styles from styles.css-->
 <head>
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
 
-    <header class = "jumbotron">
-        <div class ="container">
-            <div class ="row">
-                <div class ="col-12 col-sm-6">
+    <header class = "jumbotron"> <!--Let us add the class jumbotron to the header class as shown below. This turns the header element into a Bootstrap component named Jumbotron-->
+        <div class ="container"> <!--We use the container class to keep content within a fixed width on the screen, determined by the size of the screen. -->
+            <div class ="row row-header"> <!--Let us now add the class row to the first-level inner div elements inside the container. This organizes the page into rows of content. -->
+                <div class ="col-12 col-sm-6"> <!--this is the column class, each row is divided into 12 columns and we can specify what content will take on 
+                                                how many columns depending on the size of the viewing screen, sm for small, md for medium. If we don't specify, it means extra small-->
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -40,7 +42,7 @@
     </header>
 
     <div class ="container">
-        <div class ="row">
+        <div class ="row row-content align-items-center">
             <div class ="col col-sm col-md">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -51,7 +53,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class ="col col-sm col-md">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -61,7 +63,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col col-sm col-md">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -73,12 +75,12 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer \"> <!--we create a custom footer class so that we can edit it in the css file-->
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <ul class="list-unstyled"> <!--this removes the bullet points-->
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -96,8 +98,8 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="tex-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -107,8 +109,8 @@
                     </div>
                 </div>
            </div>
-           <div class ="col-auto">             
-                <div>
+           <div class="row justify-content-center">             
+                <div class ="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
